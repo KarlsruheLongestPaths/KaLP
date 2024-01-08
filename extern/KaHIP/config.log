@@ -1,0 +1,2 @@
+file /media/sf_lp/KaLPv2.0/extern/KaHIP/SConstruct,line 91:
+	Configure(confdir = .sconf_temp)
