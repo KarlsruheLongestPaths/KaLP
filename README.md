@@ -23,16 +23,48 @@ which is significantly faster than other state-of-the-art methods and can solve 
 Installation Notes
 =====
 
-Before you can start you need to install the following software packages:
 
-- CMake >= v3.10 
+## Downloading KaLP: 
+You can download KaLP with the following command line:
 
-Once you installed the packages, just type ./compile.sh.
-Once you did that without errors you can try to run the following command:
+```console
+git clone https://github.com/KarlsruheLongestPaths/KaLP
+```
 
+Before you can start you need to install the CMake >= v3.10.
+
+Once you installed the package, just type 
+```console
+./compile.sh 
+```
+In this case, all binaries, libraries and headers are in the folder ./deploy/ 
+
+Note that this script detects the amount of available cores on your machine and uses all of them for the compilation process. If you don't want that, set the variable NCORES to the number of cores that you would like to use for compilation. 
+
+Alternatively use the standard cmake build process:
+```console 
+mkdir build
+cd build 
+cmake ../ -DCMAKE_BUILD_TYPE=Release     
+make 
+cd ..
+```
+In this case, the binaries, libraries and headers are in the folder ./build 
+
+Running Programs
+=====
+
+For a description of the graph format (and an extensive description of all other programs) please have a look into the manual. We give a short example here.
+
+#### Example Runs
+```console
+./deploy/graph_checker ./examples/rgg_n_2_15_s0.graph 
+```
+
+```console
 ./deploy/kalp examples/Grid8x8.graph --start_vertex=0 --target_vertex=63
-
-For a description of the graph format please have look into the manual.
+```
+For a description of the graph format please have look into the manual. The graphchecker tool can check the graph format.
 
 License
 =====
