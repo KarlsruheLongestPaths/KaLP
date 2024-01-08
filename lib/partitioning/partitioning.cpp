@@ -28,8 +28,10 @@
 #include "partitioning.h"
 #include "config.h"
 #include "data_structure/graph_access.h"
-#include "extern/KaHIP/app/balance_configuration.h"
-#include "extern/KaHIP/app/configuration.h"
+//#include "extern/KaHIP/app/balance_configuration.h"
+//#include "extern/KaHIP/app/configuration.h"
+#include "balance_configuration.h"
+#include "configuration.h"
 #include "graph_partitioner.h"
 #include "partition_config.h"
 
