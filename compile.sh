@@ -11,29 +11,23 @@ if [[ "$unamestr" == "Darwin" ]]; then
         NCORES=`sysctl -n hw.ncpu`
 fi
 
-rm -rf deploy
-for program in kalp generate_maze random_subgraph; do 
-scons program=$program variant=optimized -j $NCORES
-if [ "$?" -ne "0" ]; then 
-        echo "compile error in $program. exiting."
-        exit
-fi
-done
+mkdir bin 
+cd bin 
+cmake ../
+make -j $NCORES
+cd ..
 
-cd extern/KaHIP
-scons program=graphchecker variant=optimized -j 4
-if [ "$?" -ne "0" ]; then 
-        echo "compile error in graph checker! we continue."
-        exit
-fi
+rm -rf deploy
+
+cd extern/KaHIP3.16
+./compile_withcmake.sh
 cd ..
 cd ..
+
 
 mkdir deploy
-cp ./optimized/kalp deploy/
-cp ./optimized/generate_maze deploy/
-cp ./optimized/random_subgraph deploy/
-cp ./extern/KaHIP/optimized/graphchecker deploy/
-rm -rf optimized
-rm config.log
+cp ./bin/kalp deploy/
+cp ./bin/generate_maze deploy/
+cp ./bin/random_subgraph deploy/
+cp ./extern/KaHIP3.16/deploy/graphchecker deploy/
 
