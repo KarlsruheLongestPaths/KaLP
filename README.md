@@ -11,7 +11,7 @@ which is significantly faster than other state-of-the-art methods and can solve 
 <p align="center">
 <img src="./img/lpath.png"
   alt="longest paths"
-  width="601" height="558">
+  width="301" height="275">
 </p>
 
 [1] Longest Paths Sequentially: https://arxiv.org/pdf/1702.04170.pdf
