@@ -10,7 +10,7 @@ which is significantly faster than other state-of-the-art methods and can solve 
 
 <p align="center">
 <img src="./img/lpath.png"
-  alt="framework overview"
+  alt="longest paths"
   width="601" height="558">
 </p>
 
