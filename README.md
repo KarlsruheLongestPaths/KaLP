@@ -58,7 +58,7 @@ For a description of the graph format (and an extensive description of all other
 
 #### Example Runs
 ```console
-./deploy/graph_checker ./examples/rgg_n_2_15_s0.graph 
+./deploy/graphchecker ./examples/rgg_n_2_15_s0.graph 
 ```
 
 ```console
