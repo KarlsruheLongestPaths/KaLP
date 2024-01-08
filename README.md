@@ -1,4 +1,4 @@
-Karlsruhe Longest Paths (KaLP)
+Karlsruhe Longest Paths (KaLP v2.1)
 =====
 
 The KaLP framework -- Karlsruhe Longest Paths.
