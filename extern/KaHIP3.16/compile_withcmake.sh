@@ -32,8 +32,8 @@ echo "Copying files into 'deploy'"
 mkdir deploy
 
 # Serial
-echo
-echo "... executables (serial)"
+#echo
+#echo "... executables (serial)"
 for name in graphchecker; do
     cp ./build/"$name" deploy/
 done
