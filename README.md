@@ -3,6 +3,7 @@ Karlsruhe Longest Paths (KaLP v2.1)
 [![License: GPL 3](https://img.shields.io/badge/license-GPLv3-blue)]([https://opensource.org/licenses/GPL3](https://opensource.org/license/gpl-3-0/))
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/KarlsruheLongestPaths/KaLP/c-cpp.yml)
 
+
 The KaLP framework -- Karlsruhe Longest Paths -- represents a significant advancement in solving the longest path problem (LP) in undirected graphs. The LP challenge involves identifying the longest simple path between two vertices in a graph, where the path's length is determined by either the number of edges or the total weight of these edges. This problem, recognized for its NP-completeness, finds practical applications in various fields such as circuit board design, project planning, information retrieval, and developing patrolling algorithms for robots in graph environments.
 
 Our contribution lies in proposing an optimal algorithm for the LP problem in undirected graphs [1,2]. This algorithm leverages graph partitioning techniques combined with dynamic programming to enhance computational efficiency. Compared to other existing methods, our approach exhibits significantly higher speed and the ability to solve more complex instances. This performance leap is particularly notable in scenarios involving large and complex graphs, where traditional methods often fall short. Here we provide the implementation of the algorithm as easy to use open source software.
